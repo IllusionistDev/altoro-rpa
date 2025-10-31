@@ -1,0 +1,16 @@
+services:
+  altoro-rpa:
+    build: .
+    image: altoro-rpa:latest
+    container_name: altoro-rpa
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src
+      - ./artifacts:/app/artifacts
+    # command:
+    #   - tail
+    #   - -f
+    #   - /dev/null
+    # Prevent Chrome OOM issues in Docker:
+    shm_size: "1gb"

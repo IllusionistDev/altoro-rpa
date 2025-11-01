@@ -72,10 +72,8 @@ altoro_rpa/
 ├── 📄 .env.example                    # Example environment config
 ├── 📄 README.md                       # This file
 │
-├── 📁 .claude/                        # IDE settings
-│   └── settings.local.json
 │
-├── 📁 artifacts/                      # Runtime outputs (gitignored)
+├── 📁 artifacts/                      # Created Runtinme and stores Runtime outputs (gitignored)
 │   ├── logs/                         # Application logs (run.log)
 │   ├── screenshots/                  # Error & confirmation screenshots
 │   ├── traces/                       # Playwright trace files (trace.zip)
